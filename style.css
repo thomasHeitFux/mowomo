@@ -1,0 +1,168 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    background: #ccc;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1408px;
+}
+
+h1 {
+    width: 135px;
+    height: 36px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    margin: 30px;
+    color: #000000;
+
+    mix-blend-mode: normal;
+}
+
+.containerCards {
+    display: grid;
+    grid-gap: .5em;
+    margin: 10px;
+}
+
+@media (min-width:750px) {
+    .containerCards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:1250px) {
+    .containerCards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 8px 16px 16px;
+    gap: 16px;
+    width: 330px;
+    height: 637px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 50px rgba(18, 17, 39, 0.08);
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 8px;
+    width: 122px;
+    height: 30px;
+    background: #DD2025;
+}
+
+.box p {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.images {
+    background: url('https://www.expoagro.com.ar/wp-content/uploads/webinar-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    width: 330px;
+}
+
+.title {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    color: #1A1A1A;
+}
+
+.text {
+    width: 310px;
+    height: 96px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #464646;
+}
+
+.techs {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #464646;
+    flex: none;
+    flex-grow: 0;
+}
+
+.authorImg {
+    width: 60px;
+    height: 60px;
+    left: 16px;
+    top: 561px;
+    background: url('https://www.losandes.com.ar/resizer/xsoG-wFq4fNwaic2Kv48kedE864=/1023x682/smart/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/ZCGLNODMORF7HPMQTLXU2SV7KI.jpg');
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.footBox {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    padding: 8px 6px;
+    gap: 10px;
+    width: 221px;
+    height: 60px;
+    left: 852px;
+    top: 1527px;
+    background: #DD2025;
+    margin: 40px;
+}
+
+.footBox p {
+    width: 135px;
+    height: 36px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.authcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+a{
+    text-decoration: none;
+}
